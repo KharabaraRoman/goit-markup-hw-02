@@ -157,6 +157,7 @@ header {
 
 
 
+
 /* Кнопки в portfolio.html */
 
 
@@ -210,10 +211,32 @@ header {
     color: #4D5AE5;
     border: none;
 }
-.buttonstest {
-    display: flex;
-    justify-content: center;
+
+/* test */
+.link-footer {
+    padding-top: 100px;
+    padding-left: 156px;
+    padding-right: 1170px;
+   
 }
+.footer-p {
+    padding-top: 16px;
+    padding-right: 1020px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+}
+.logo-link {
+    padding-top: 24px;
+    padding-left: 200px;
+    padding-right: 1169px;
+}
+
+
+
+
+
+
+
 
 
 
