@@ -1,0 +1,222 @@
+body {
+    
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Основной цвет текста  */ #2E2F42
+/* цвет ссылок */ #434455
+/* Вторичный цвет текста */ #434455
+/* цвет хедера */ #FFFFFF
+/* hero color */ #2E2F42
+/* button hero: bacground #4D5AE5 text #FFFFFF */
+/* section features background #E5E5E5 */
+
+/* header */
+header {
+    background-color: #FFFFFF;
+}
+.logo-header1 {
+    color: #4D5AE5;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3%;
+}
+.logo-header2 {
+    color: #2E2F42;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3%;
+}
+/* navigation */
+.navigation a {
+    color: #2E2F42;
+}
+.navigation a:hover,
+ .navigation a:focus {
+    color: tomato;
+}
+/* authefication */
+.authefication {
+    color: #434455;
+}
+.authefication:hover,
+.authefication:focus {
+    color: tomato;
+}
+
+/* hero */
+
+.hero {
+    background-color: #2E2F42;
+    width: 1440px;
+    height: 603px;
+}
+.hero-title {
+    color: #FFFFFF;
+}
+
+.button-hero {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 4%;
+}
+
+/* section features */
+.features {
+    background-color: #E5E5E5;
+}
+.features-title {
+    color: #E5E5E5;
+}
+.features h3 {
+    color: #2E2F42;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+.features p {
+    color: #434455;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    width: 264px;
+    height: 72px;
+}
+/* section What are we doing */
+
+.what-teamtitle {
+    color: #2E2F42;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+}
+.section-what {
+    background-color: #E5E5E5;
+}
+
+/* section team */
+
+.team {
+    background-color: #F4F4FD;
+}
+.team h3 {
+    color: #2E2F42;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+.team p {
+    color: #434455;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+
+/* footer-logo */
+
+.web-footer {
+    color: #4D5AE5;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 3%;
+     
+}
+.studio-footer {
+    color: #F4F4FD;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 3%;
+}
+/* footer */
+.footer {
+    background-color: #2E2F42;
+    width: 1440px;
+    height: 310px;
+}
+.footer p {
+    color: #E7E9FC;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    width: 264px;
+    height: 72px;
+}
+
+
+
+
+
+
+
+
+/* Кнопки в portfolio.html */
+
+
+.portfoliobutton1:hover,
+.portfoliobutton1:focus,
+.portfoliobutton2:hover,
+.portfoliobutton2:focus,
+.portfoliobutton3:hover,
+.portfoliobutton3:focus,
+.portfoliobutton4:hover,
+.portfoliobutton4:focus,
+.portfoliobutton5:hover,
+.portfoliobutton5:focus {
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    cursor: pointer;
+    border: none;
+    border-radius: 4%;
+}
+.portfoliobutton1 {
+    color: #4D5AE5;
+    width: 69px;
+    height: 48px;
+    border: none;
+}
+
+.portfoliobutton2 {
+    width: 116px;
+    height: 48px;
+    color: #4D5AE5;
+    border: none
+}
+ 
+.portfoliobutton3 {
+    width: 78px;
+    height: 48px;
+    color: #4D5AE5;
+    border: none
+}
+
+.portfoliobutton4 {
+    width: 101px;
+    height: 48px;
+    color: #4D5AE5;
+    border: none;
+}
+ 
+.portfoliobutton5 {
+    width: 126px;
+    height: 48px;
+    color: #4D5AE5;
+    border: none;
+}
+.buttonstest {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
