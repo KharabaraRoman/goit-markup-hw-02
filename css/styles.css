@@ -1,4 +1,15 @@
+:root {
+    --buton-color: #4D5AE5;
+    --link-hover: tomato;
+    --navigation-link: #2E2F42;
+    --authefication-link: #434455;
+    --buttons-color-hover: #FFFFFF;
+    --buttons-background-color-hover: #4D5AE5;
+}
+
+
 body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     
 }
 ul {
@@ -34,21 +45,22 @@ header {
     letter-spacing: 3%;
 }
 /* navigation */
-.navigation a {
-    color: #2E2F42;
+.navigation a  {
+    color: var(--navigation-link);
 }
 .navigation a:hover,
  .navigation a:focus {
-    color: tomato;
+    color: var(--link-hover);
 }
 /* authefication */
 .authefication {
-    color: #434455;
+    color: var(--authefication-link);
 }
 .authefication:hover,
 .authefication:focus {
-    color: tomato;
+    color: var(--link-hover);
 }
+
 
 /* hero */
 
@@ -70,12 +82,10 @@ header {
 }
 
 /* section features */
-.features {
+.features, .features-title {
     background-color: #E5E5E5;
 }
-.features-title {
-    color: #E5E5E5;
-}
+
 .features h3 {
     color: #2E2F42;
     font-size: 20px;
@@ -158,7 +168,7 @@ header {
 
 
 
-/* Кнопки в portfolio.html */
+/* buttons portfolio.html */
 
 
 .portfoliobutton1:hover,
@@ -171,14 +181,14 @@ header {
 .portfoliobutton4:focus,
 .portfoliobutton5:hover,
 .portfoliobutton5:focus {
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--buttons-color-hover);
+    background-color: var(--buttons-background-color-hover);
     cursor: pointer;
     border: none;
     border-radius: 4%;
 }
 .portfoliobutton1 {
-    color: #4D5AE5;
+    color: var(--buton-color);
     width: 69px;
     height: 48px;
     border: none;
@@ -187,48 +197,32 @@ header {
 .portfoliobutton2 {
     width: 116px;
     height: 48px;
-    color: #4D5AE5;
+    color: var(--buton-color);
     border: none
 }
  
 .portfoliobutton3 {
     width: 78px;
     height: 48px;
-    color: #4D5AE5;
+    color: var(--buton-color);
     border: none
 }
 
 .portfoliobutton4 {
     width: 101px;
     height: 48px;
-    color: #4D5AE5;
+    color: var(--buton-color);
     border: none;
 }
  
 .portfoliobutton5 {
     width: 126px;
     height: 48px;
-    color: #4D5AE5;
+    color: var(--buton-color);
     border: none;
 }
 
-/* test */
-.link-footer {
-    padding-top: 100px;
-    padding-left: 156px;
-    padding-right: 1170px;
-   
-}
-.footer-p {
-    padding-top: 16px;
-    padding-right: 1020px;
-    padding-bottom: 100px;
-    padding-left: 156px;
-}
-.logo-link {
-    padding-top: 24px;
-    padding-left: 200px;
-    padding-right: 1169px;
+
 }
 
 
