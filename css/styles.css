@@ -104,6 +104,8 @@ header {
     font-weight: 700;
     line-height: 1.18;
     font-style: "SemiBold";
+    width: 170px;
+    height: 51px;
 }
 
 /* section features */
