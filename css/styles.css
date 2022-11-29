@@ -1,16 +1,18 @@
 :root {
     --buton-color: #4D5AE5;
-    --link-hover: tomato;
-    --navigation-link: #2E2F42;
-    --authefication-link: #434455;
+    --primary-text-color: #2E2F42;
+    --secondary-text-color: #434455;
     --buttons-color-hover: #FFFFFF;
     --buttons-background-color-hover: #4D5AE5;
+    --primary-font: "Roboto";
+    --secondary-background: "Raleway";
+    
 }
 
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-    
+    font-family: "Roboto", sans-serif;
+    background-color: #E5E5E5;
 }
 ul {
     list-style: none;
@@ -19,115 +21,165 @@ a {
     text-decoration: none;
 }
 
-
-/* Основной цвет текста  */ #2E2F42
-/* цвет ссылок */ #434455
-/* Вторичный цвет текста */ #434455
-/* цвет хедера */ #FFFFFF
-/* hero color */ #2E2F42
-/* button hero: bacground #4D5AE5 text #FFFFFF */
-/* section features background #E5E5E5 */
-
 /* header */
+
 header {
     background-color: #FFFFFF;
 }
 .logo-header1 {
     color: #4D5AE5;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3;
     letter-spacing: 3%;
+    font-family: var(--secondary-background);
+    font-weight: 800;
+    font-style: "ExtraBold";
+
 }
 .logo-header2 {
-    color: #2E2F42;
+    color: var(--primary-text-color);
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3;
     letter-spacing: 3%;
+    font-family: var(--secondary-background);
+    font-weight: 800;
+    font-style: "ExtraBold";
 }
 /* navigation */
+
 .navigation a  {
-    color: var(--navigation-link);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-style: "semibolt";
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+    font-weight: 700;
 }
 .navigation a:hover,
  .navigation a:focus {
-    color: var(--link-hover);
+    color: var(--buttons-background-color-hover);
 }
 /* authefication */
+
 .authefication {
-    color: var(--authefication-link);
+    color: var(--secondary-text-color);
+    font-family: var(--primary-font);
+    font-size: 16;
+    line-height: 1.5;
+    font-style: "Regular";
+    letter-spacing: 2%;
+    font-weight: 400;
 }
 .authefication:hover,
 .authefication:focus {
-    color: var(--link-hover);
+    color: var(--buttons-background-color-hover);
 }
 
 
 /* hero */
 
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--primary-text-color);
     width: 1440px;
     height: 603px;
 }
 .hero-title {
     color: #FFFFFF;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 2%;
+    font-style: "SemiBold";
 }
 
 .button-hero {
-    background-color: #4D5AE5;
+    background-color: var(--buton-color);
     color: #FFFFFF;
     border: none;
     font-size: 16px;
     letter-spacing: 4%;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 1.18;
+    font-style: "SemiBold";
 }
 
 /* section features */
-.features, .features-title {
+.features {
     background-color: #E5E5E5;
+}
+.features-title {
+    color: #E5E5E5;
 }
 
 .features h3 {
-    color: #2E2F42;
+    color: var(--primary-text-color);
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 2%;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-style: "SemiBold";
+
 }
 .features p {
-    color: #434455;
+    color: var(--secondary-text-color);
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 2%;
     width: 264px;
     height: 72px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: "Regular";
 }
 /* section What are we doing */
 
-.what-teamtitle {
-    color: #2E2F42;
+.what-team-title {
+    color: var(--primary-text-color);
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 2%;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-style: "SemiBold";
+    
 }
 .section-what {
     background-color: #E5E5E5;
+    
+
 }
 
 /* section team */
 
 .team {
     background-color: #F4F4FD;
+    
+    
+    
 }
 .team h3 {
-    color: #2E2F42;
+    color: var(--primary-text-color);
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 2%;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-style: "SemiBold";
+    
+
 }
 .team p {
-    color: #434455;
+    color: var(--secondary-text-color);
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 2%;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: "Regular";
 }
 
 /* footer-logo */
@@ -135,30 +187,46 @@ header {
 .web-footer {
     color: #4D5AE5;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 3%;
+    font-family: var(--secondary-background);
+    font-weight: 800;
+    font-style: "ExtraBold";
+
      
 }
 .studio-footer {
     color: #F4F4FD;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 3%;
+    font-family: var(--secondary-background);
+    font-weight: 800;
+    font-style: "ExtraBold";
+    
 }
 /* footer */
 .footer {
-    background-color: #2E2F42;
+    background-color: var(--primary-text-color);
     width: 1440px;
     height: 310px;
 }
 .footer p {
     color: #E7E9FC;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 2%;
     width: 264px;
     height: 72px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: "Regular";
 }
+
+
+
+
+
 
 
 
@@ -171,59 +239,123 @@ header {
 /* buttons portfolio.html */
 
 
-.portfoliobutton1:hover,
-.portfoliobutton1:focus,
-.portfoliobutton2:hover,
-.portfoliobutton2:focus,
-.portfoliobutton3:hover,
-.portfoliobutton3:focus,
-.portfoliobutton4:hover,
-.portfoliobutton4:focus,
-.portfoliobutton5:hover,
-.portfoliobutton5:focus {
+.button-all:hover,
+.button-all:focus,
+.button-website:hover,
+.button-website:focus,
+.button-app:hover,
+.button-app:focus,
+.button-design:hover,
+.button-design:focus,
+.button-marketing:hover,
+.button-marketing:focus {
     color: var(--buttons-color-hover);
     background-color: var(--buttons-background-color-hover);
     cursor: pointer;
     border: none;
     border-radius: 4%;
 }
-.portfoliobutton1 {
+.button-all {
     color: var(--buton-color);
     width: 69px;
     height: 48px;
     border: none;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: "SemiBold";
+    letter-spacing: 4%;
+    
 }
 
-.portfoliobutton2 {
+.button-website {
     width: 116px;
     height: 48px;
     color: var(--buton-color);
-    border: none
+    border: none;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: "SemiBold";
+    letter-spacing: 4%;
 }
  
-.portfoliobutton3 {
+.button-app {
     width: 78px;
     height: 48px;
     color: var(--buton-color);
-    border: none
+    border: none;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: "SemiBold";
+    letter-spacing: 4%;
 }
 
-.portfoliobutton4 {
+.button-design {
     width: 101px;
     height: 48px;
     color: var(--buton-color);
     border: none;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: "SemiBold";
+    letter-spacing: 4%;
 }
  
-.portfoliobutton5 {
+.button-marketing {
     width: 126px;
     height: 48px;
     color: var(--buton-color);
     border: none;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: "SemiBold";
+    letter-spacing: 4%;
+}
+
+/* section portfolio btn */
+
+.potfolio {
+    background-color: #E5E5E5;
+}
+
+.potfolio-title {
+    color: #E5E5E5;
+}
+/* section portfolio list */
+.title-portfolio-list {
+    color: var(--primary-text-color);
+    letter-spacing: 2%;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font style: "SemiBold";
+    font size: 100px;
+    Line height: 1.2;
+}
+.filter-name {
+    color: var(--authefication-link);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-size: "Regular";
+    letter-spacing: 2%;
+    font-weight: 400;
 }
 
 
-}
+
+
+
+
+
 
 
 
