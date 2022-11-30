@@ -4,62 +4,66 @@
     --secondary-text-color: #434455;
     --buttons-color-hover: #FFFFFF;
     --buttons-background-color-hover: #4D5AE5;
-    --primary-font: "Roboto";
+    --complementary-color: #E5E5E5;
+    --complementary-color2: #F4F4FD;
+    --primary-font: "Roboto"; 
     --secondary-background: "Raleway";
     
 }
 
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #E5E5E5;
+    font-family: var(--primary-font);
+    background-color: var(--buttons-color-hover);
+    color: var(--primary-text-color);
 }
-ul {
-    list-style: none;
-}
-a {
+
+.list, .link {
     text-decoration: none;
+    list-style: none;
 }
 
 /* header */
 
-header {
-    background-color: #FFFFFF;
-}
 .logo-header1 {
-    color: #4D5AE5;
+    color: var(--buton-color);
     font-size: 18px;
     line-height: 1.3;
-    letter-spacing: 3%;
+    letter-spacing: 0,03em;
     font-family: var(--secondary-background);
     font-weight: 800;
-    font-style: "ExtraBold";
-
+    
 }
 .logo-header2 {
     color: var(--primary-text-color);
     font-size: 18px;
     line-height: 1.3;
-    letter-spacing: 3%;
+    letter-spacing: 0,03em;
     font-family: var(--secondary-background);
     font-weight: 800;
-    font-style: "ExtraBold";
+    
+    
 }
 /* navigation */
 
-.navigation a  {
+.nav-link  {
     color: var(--primary-text-color);
     font-family: var(--primary-font);
-    font-style: "semibolt";
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0,02em;
     font-weight: 700;
+    text-decoration: none;
+    list-style: none;
 }
-.navigation a:hover,
- .navigation a:focus {
-    color: var(--buttons-background-color-hover);
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--secondary-text-color);
 }
+.nav-link:active {
+    color: var(--buton-color);
+}
+
 /* authefication */
 
 .authefication {
@@ -67,9 +71,9 @@ header {
     font-family: var(--primary-font);
     font-size: 16;
     line-height: 1.5;
-    font-style: "Regular";
-    letter-spacing: 2%;
-    font-weight: 400;
+    letter-spacing: 0,02em;
+    text-decoration: none;
+    
 }
 .authefication:hover,
 .authefication:focus {
@@ -81,63 +85,63 @@ header {
 
 .hero {
     background-color: var(--primary-text-color);
-    width: 1440px;
-    height: 603px;
 }
 .hero-title {
-    color: #FFFFFF;
+    color: var(--buttons-color-hover);
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
-    letter-spacing: 2%;
-    font-style: "SemiBold";
+    letter-spacing: 0,03em;
+    
 }
 
 .button-hero {
     background-color: var(--buton-color);
-    color: #FFFFFF;
+    color: var(--buttons-color-hover);
     border: none;
     font-size: 16px;
-    letter-spacing: 4%;
-    font-family: var(--primary-font);
+    letter-spacing: 0,03em;
+    font-family: inherit;
     font-weight: 700;
     line-height: 1.18;
-    font-style: "SemiBold";
-    width: 170px;
-    height: 51px;
     border-radius: 4%;
-    
+    cursor: pointer;
+}
+.button-hero:hover,
+.button-hero:focus {
+    background-color: var(--buton-color);
+    color: var(--buttons-color-hover);
+}
+.button-hero:active {
+    background-color: #404BBF; 
+    color: var(--buttons-color-hover);
 }
 
 /* section features */
 .features {
-    background-color: #E5E5E5;
+    background-color: var(--complementary-color);
 }
 .features-title {
-    color: #E5E5E5;
+    color: var(--complementary-color);
 }
 
-.features h3 {
+.features-header {
     color: var(--primary-text-color);
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 2%;
+    letter-spacing: 0,02em;
     font-family: var(--primary-font);
     font-weight: 700;
-    font-style: "SemiBold";
+    
 
 }
-.features p {
+.features-paragraph {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
-    width: 264px;
-    height: 72px;
+    letter-spacing: 0,02em;
     font-family: var(--primary-font);
-    font-weight: 400;
-    font-style: "Regular";
 }
 /* section What are we doing */
 
@@ -145,14 +149,14 @@ header {
     color: var(--primary-text-color);
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 2%;
+    letter-spacing: 0,02em;
     font-family: var(--primary-font);
     font-weight: 700;
-    font-style: "SemiBold";
+    
     
 }
 .section-what {
-    background-color: #E5E5E5;
+    background-color: var(--complementary-color);
     
 
 }
@@ -160,83 +164,67 @@ header {
 /* section team */
 
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--complementary-color2);
     
     
     
 }
-.team h3 {
+.team-header {
     color: var(--primary-text-color);
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 2%;
+    letter-spacing: 0,02em;
     font-family: var(--primary-font);
     font-weight: 700;
-    font-style: "SemiBold";
+   
     
 
 }
-.team p {
+.team-paragraph {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0,02em;
     font-family: var(--primary-font);
-    font-weight: 400;
-    font-style: "Regular";
+    
 }
 
 /* footer-logo */
 
 .web-footer {
-    color: #4D5AE5;
+    color: var(--buton-color);
     font-size: 18px;
     line-height: 1.17;
-    letter-spacing: 3%;
+    letter-spacing: 0,03em;
     font-family: var(--secondary-background);
     font-weight: 800;
-    font-style: "ExtraBold";
+    
+    
 
      
 }
 .studio-footer {
-    color: #F4F4FD;
+    color: var(--complementary-color2);
     font-size: 18px;
     line-height: 1.17;
-    letter-spacing: 3%;
+    letter-spacing: 0,03em;
     font-family: var(--secondary-background);
     font-weight: 800;
-    font-style: "ExtraBold";
+    
     
 }
 /* footer */
 .footer {
     background-color: var(--primary-text-color);
-    width: 1440px;
-    height: 310px;
+    
 }
-.footer p {
+.footer-paragraph {
     color: #E7E9FC;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
-    width: 264px;
-    height: 72px;
+    letter-spacing: 0,02em;
     font-family: var(--primary-font);
-    font-weight: 400;
-    font-style: "Regular";
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -261,97 +249,81 @@ header {
 }
 .button-all {
     color: var(--buton-color);
-    width: 69px;
-    height: 48px;
     border: none;
     font-size: 16px;
     font-family: var(--primary-font);
     font-weight: 700;
     line-height: 1.5;
-    font-style: "SemiBold";
-    letter-spacing: 4%;
+    letter-spacing: 0,04em;
     
 }
 
 .button-website {
-    width: 116px;
-    height: 48px;
     color: var(--buton-color);
     border: none;
     font-size: 16px;
     font-family: var(--primary-font);
     font-weight: 700;
     line-height: 1.5;
-    font-style: "SemiBold";
-    letter-spacing: 4%;
+    letter-spacing: 0,04em;
 }
  
 .button-app {
-    width: 78px;
-    height: 48px;
     color: var(--buton-color);
     border: none;
     font-size: 16px;
     font-family: var(--primary-font);
     font-weight: 700;
     line-height: 1.5;
-    font-style: "SemiBold";
-    letter-spacing: 4%;
+    letter-spacing: 0,04em;
 }
 
 .button-design {
-    width: 101px;
-    height: 48px;
     color: var(--buton-color);
     border: none;
     font-size: 16px;
     font-family: var(--primary-font);
     font-weight: 700;
     line-height: 1.5;
-    font-style: "SemiBold";
-    letter-spacing: 4%;
+    letter-spacing: 0,04em;
 }
  
 .button-marketing {
-    width: 126px;
-    height: 48px;
     color: var(--buton-color);
     border: none;
     font-size: 16px;
     font-family: var(--primary-font);
     font-weight: 700;
     line-height: 1.5;
-    font-style: "SemiBold";
-    letter-spacing: 4%;
+    letter-spacing: 0,04em;
 }
 
 /* section portfolio btn */
 
-.potfolio {
-    background-color: #E5E5E5;
-}
 
 .potfolio-title {
-    color: #E5E5E5;
+    color: var(--buttons-color-hover);
 }
 /* section portfolio list */
 .title-portfolio-list {
     color: var(--primary-text-color);
-    letter-spacing: 2%;
+    letter-spacing: 0,02em;
     font-family: var(--primary-font);
     font-weight: 700;
-    font style: "SemiBold";
-    font size: 100px;
-    Line height: 1.2;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.portfolio-link {
+    text-decoration: none;
 }
 .filter-name {
     color: var(--authefication-link);
     font-family: var(--primary-font);
     font-size: 16px;
     line-height: 1.5;
-    font-size: "Regular";
-    letter-spacing: 2%;
-    font-weight: 400;
+    letter-spacing: 0,02em;
+    text-decoration: none;
 }
 
 
